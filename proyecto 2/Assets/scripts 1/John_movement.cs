@@ -2,18 +2,29 @@ using UnityEngine;
 
 public class JohnMovement : MonoBehaviour
 {
+    private Rigidbody2D Rigidbody2D;
+    private float Horizontal;
 
     void Start()
     {
-
+        Rigidbody2D = GetComponent<Rigidbody2D>();
     }
+
     void Update()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
+        Horizontal = Input.GetAxisRaw("Horizontal");
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            Jump();
+        }
     }
-    private void FixedUpdate()
-    {
-        Rigidbody2D.velocity = new Vector2(Horizontal, Rigidbody2D.velocity.y);
-        
+    private void Jump()
+        {
+        Rigidbody2D.AddForce(Vector2.up);
     }
+
+
+
+    
 }
