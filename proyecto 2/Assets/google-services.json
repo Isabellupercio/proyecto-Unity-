@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "313709383417",
+    "project_id": "juego-unity-776b3",
+    "storage_bucket": "juego-unity-776b3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313709383417:android:d48ba087359bcae49f1c28",
+        "android_client_info": {
+          "package_name": "aplicacion.unity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfDw_B6pvgt3a3KMmC6FdTdh-oLqngzkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
