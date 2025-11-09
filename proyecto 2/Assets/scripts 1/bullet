@@ -1,0 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.Numerics;
+using unityEngine;
+
+public class BulletScript : MonoBeahviour
+
+{
+    public float Speed;
+    private Rigidbody2 Rigidbody2D;
+
+
+    void start()
+    {
+        Rigidbody2D = Getcomponent<Rigidbody2D>();
+
+    }
+
+    private void FixedUpdate()
+    {
+        Rigidbody2D.velocity = Vector2.right * Speed;
+
+    }
+
+    public void SetDirection(Vector2 direction)
+
+    {
+        direction = direction;
+    }
+
+
+}
